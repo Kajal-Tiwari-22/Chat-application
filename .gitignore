@@ -1,0 +1,52 @@
+# Node.js
+node_modules/                # Ignore node_modules in root, backend, and frontend
+backend/node_modules/
+frontend/node_modules/
+.pnp/
+.pnp.js
+pnpm-debug.log*
+
+# Environment Variables
+.env                          # Environment variables
+.env.local                    # Local environment variables
+.env.development.local        # Development-specific variables
+.env.test.local               # Test-specific variables
+.env.production.local         # Production-specific variables
+
+# Logs
+*.log                         # Log files
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Outputs
+backend/build/               # Backend build output folder
+frontend/build/              # Frontend build output folder
+frontend/dist/               # Frontend distribution folder
+frontend/out/                # Output folder for Next.js (if used)
+public/build/                # Static assets build folder
+
+# Testing Coverage
+/coverage/                   # Test coverage reports
+/.nyc_output                 # NYC coverage output
+coverage/
+*.lcov
+
+# Debug Directories
+.vscode/                     # VS Code configuration directory
+.idea/                       # JetBrains IDE configuration directory
+.history/                    # VS Code history files
+
+# System Files (macOS, Linux, Windows)
+.DS_Store                    # macOS hidden files
+Thumbs.db                    # Windows file thumbnails
+Desktop.ini                  # Windows desktop file settings
+*.swp                        # Swap files created by text editors (like Vim)
+
+# Miscellaneous
+/.eslintcache                # ESLint cache file
+/.jestcache                  # Jest cache file
+/.parcel-cache               # Parcel cache files
+*.tsbuildinfo                # TypeScript build info file
+*.lock                       # Ignore lock files if not needed (optional)
